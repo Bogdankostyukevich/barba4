@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbershop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- шапка сторінки -->
+    <header class="header">
+        <div class="container">
+            <div>
+                <a class="header__link" href="/">
+                    <svg class="header__logo" width="68" height="55">
+                        <use href="./images/icons/sprite.svg#icon-Logo"></use>
+                    </svg>
+                </a>
+            </div>
+            
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-list__item"><a href="#abouts" class="nav-list__link">О нас</a></li>
+                    <li class="nav-list__item"><a href="#prices" class="nav-list__link">Услуги и цены</a></li>
+                    <li class="nav-list__item"><a href="#masters" class="nav-list__link">Мастера</a></li>
+                    <li class="nav-list__item"><a href="#contacts" class="nav-list__link">Контакты</a></li>
+                </ul>
+                <ul class="contacts">
+                    <li><a href="tel:+380441111111" class="contacts__tel">+38 044 111 11 11</a></li>
+                    <li><a href="#registrations" class="contacts__btn">онлайн-запись</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+
+        <!-- головна секція -->
+        <section class="hero">
+            <div class="container">
+                <ul class="hero-list">
+                    <li class="hero-list__item">
+                        <a href="" class="hero-list__link pseudo">Instagram</a>
+                    </li>
+                    <li class="hero-item">
+                        <a href="" class="hero-list__link">Youtube</a>
+                    </li>
+                </ul>
+                <p class="pretitle pretitle__gray pseudo sticky">A hair salon for men in Kyiv</p>
+                <div class="hero-box">
+                    <h1 class="hero-box__title">BarberShop</h1>
+                    <button type="btn" class="hero-box__btn">галерея</button>
+                </div>
+                
+                <p class="statement">Мы эксперты в модных мужских стрижках. <br> Работаем быстро, осторожно и со вкусом.</p>
+                <ul class="switch">
+                    <li class="switch__item">
+                        <button type="button" class="switch__back">Назад</button>
+                    </li>
+                    <li class="switch__item">
+                        <button type="button" class="switch__front">Вперед</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- про нас -->
+        <section class="about">
+            <div class="about-content container">
+                <ul class="about-list">
+                    <li class="about-list__item">
+                        <img class="about-list__img" src="./images/img1.jpg" alt="ровняем бороду" width="270">
+                    </li>
+                    <li class="about-item">
+                        <img class="about-list__img" src="./images/img2.jpg" alt="подбреваем затылок" width="270">
+                    </li>
+                </ul>
+                <div class="about-box">
+                    <p class="pretitle pseudo sticky" id="abouts">О НАС</p>
+                    <h2 class="about-box__title">Лучший Барбершоп твоего города</h2>
+                    <h3 class="about-box__heading">Если ты хочешь добавить в свой образ больше <br/> уверенности – тебе точно к нам.</h3>
+                    <p class="about-us">Мы команда, которая никогда не останавливается на достигнутом
+                    и жаждет перемен. И когда ты попадешь в руки нашего мастера,
+                    то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда
+                    готовы усовершенствовать каждого, кто к нам приходит!</p>
+                    <a href="" class="about-box__reg">онлайн-запись</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- послуги та ціни -->
+        <section class="price">
+            <div class="price-box container">
+                <p class="pretitle pretitle__gray pseudo sticky">Проведи время в компании лучших мастеров</p>
+                <h2 class="price-box__title" id="prices">Услуги и цены</h2>
+                <div class="table-wrapper">
+                    <table class="table-wrapper__table">
+                        <tr class="table-wrapper__row">
+                            <td class="table-wrapper__list first">Мужская стрижка</td>
+                            <td class="table-wrapper__list">от 300 грн.</td>
+                        </tr>
+                        <tr class="table-wrapper__row">
+                            <td class="table-wrapper__list second">Стрижка бороды</td>
+                            <td class="table-wrapper__list">от 200 грн.</td>
+                        </tr>
+                        <tr class="table-wrapper__row">
+                            <td class="table-wrapper__list third">Стрижка усов</td>
+                            <td class="table-wrapper__list">от 200 грн.</td>
+                        </tr>
+                        <tr class="table-wrapper__row">
+                            <td class="table-wrapper__list fourth">Бритье опасной бритвой</td>
+                            <td class="table-wrapper__list">от 200 грн.</td>
+                        </tr>
+                    </table>
+                    <table class="table-wrapper__table">
+                        <tr class="table-wrapper__row">
+                            <td class="table-wrapper__list fifth">Cтрижка у стажера</td>
+                            <td class="table-wrapper__list">от 50 грн.</td>
+                        </tr>
+                        <tr class="table-wrapper__row">
+                            <td class="table-wrapper__list sixth">Стрижка под насадку</td>
+                            <td class="table-wrapper__list">от 200 грн.</td>
+                        </tr>
+                        <tr class="table-wrapper__row">
+                            <td class="table-wrapper__list seventh">Детская стрижка (до 12 лет)</td>
+                            <td class="table-wrapper__list">от 300 грн.</td>
+                        </tr>
+                        <tr class="table-wrapper__row">
+                            <td class="table-wrapper__list eighth">Камуфлирование седины</td>
+                            <td class="table-wrapper__list">от 200 грн.</td>
+                        </tr>
+                    </table>
+                </div>
+                <a href="" class="contacts__btn">онлайн-запись</a>
+            </div>
+        </section>
+
+        <!-- статистика -->
+        <section class="statistic">
+            <div class="features container">
+                <ul class="features__list">
+                    <li class="features__item">
+                        <p class="features__number">600<sup class="sup">+</sup></p>
+                        <p class="features__text">Довольных клиентов в день</p>
+                    </li>
+                    <li class="features__item">
+                        <p class="features__number">50<sup class="sup">+</sup></p>
+                        <p class="features__text">Наград за отличный сервис</p>
+                    </li>
+                    <li class="features__item">
+                        <p class="features__number">20<sup class="sup">+</sup></p>
+                        <p class="features__text">Лучших мастеров Киева</p>
+                    </li>
+                    <li class="features__item">
+                        <p class="features__number">100<sup class="sup">+</sup></p>
+                        <p class="features__text">Подарков постоянным клиентам</p>
+                    </li>
+                </ul>
+                <div class="statistic-info">
+                    <p class="pretitle pseudo sticky">старая традиционная школа</p>
+                    <h2 class="statistic-info__title">Почему приходят именно к нам?</h2>
+                    <p class="statistic-info__text">О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- наші майстри -->
+        <section class="masters">
+            <div class="masters-box container">
+                <p class="pretitle pseudo sticky">для настоящих ценителей атмосферы</p>
+                <h2 class="masters__title" id="masters">Наши мастера</h2>
+                <ul class="masters-list">
+                    <li class="masters-list__item">
+                        <img class="masters-list__img" src="./images/barber1.jpg" alt="barber1" width="370">
+                        <h3 class="masters-list__name">John Smith</h3>
+                        <p class="masters-list__skill">Extreme Barber</p>
+                        <ul class="social-list">
+                            <li class="social-list__item">
+                                <a href="">
+                                    <svg class="social-list__icon" width="20" height="20">
+                                        <use href="./images/icons/sprite.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg class="social-list__icon" width="20" height="20">
+                                        <use href="./images/icons/sprite.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg class="social-list__icon" width="20" height="20">
+                                        <use href="./images/icons/sprite.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg class="social-list__icon" width="20" height="20">
+                                        <use href="./images/icons/sprite.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="masters-list__item">
+                        <img class="masters-list__img" src="./images/barber2.jpg" alt="barber2" width="370">
+                        <h3 class="masters-list__name">Michele Doe</h3>
+                        <p class="masters-list__skill">Extreme Barber</p>
+                        <ul class="social-list">
+                            <li class="social-list__item">
+                                <a href="">
+                                    <svg class="social-list__icon" width="20" height="20">
+                                        <use href="./images/icons/sprite.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg class="social-list__icon" width="20" height="20">
+                                        <use href="./images/icons/sprite.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg class="social-list__icon" width="20" height="20">
+                                        <use href="./images/icons/sprite.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg class="social-list__icon" width="20" height="20">
+                                        <use href="./images/icons/sprite.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="masters-list__item">
+                        <img class="masters-list__img" src="./images/barber3.jpg" alt="barber3" width="370">
+                        <h3 class="masters-list__name">Alan Black</h3>
+                        <p class="masters-list__skill">Extreme Barber</p>
+                        <ul class="social-list">
+                            <li class="social-list__item">
+                                <a href="">
+                                    <svg class="social-list__icon" width="20" height="20">
+                                        <use href="./images/icons/sprite.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg class="social-list__icon" width="20" height="20">
+                                        <use href="./images/icons/sprite.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg class="social-list__icon" width="20" height="20">
+                                        <use href="./images/icons/sprite.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg class="social-list__icon" width="20" height="20">
+                                        <use href="./images/icons/sprite.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- <h2>барба</h2> -->
+        <section class="works">
+            <div class="works-box container">
+                <p class="pretitle pseudo sticky">На латинском языке “барба” означает “борода”</p>
+                <ul class="works-list">
+                    <li class="works-list__title">
+                        <img class="works-list__tpic" src="./images/pic1.jpg" alt="pic1" width="270">
+                        <div class="hover-wrapper"></div>
+                    </li>
+                    <li class="works-list__title">
+                        <img class="works-list__tpic" src="./images/pic2.jpg" alt="pic2" width="270">
+                        <div class="hover-wrapper"></div>
+                    </li>
+                    <li class="works-list__title">
+                        <img class="works-list__tpic" src="./images/pic3.jpg" alt="pic3" width="270">
+                        <div class="hover-wrapper"></div>
+                    </li>
+                    <li class="works-list__title">
+                        <img class="works-list__tpic" src="./images/pic4.jpg" alt="pic4" width="270">
+                        <div class="hover-wrapper"></div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- онлайн-запис -->
+        <section class="online-entry">
+            <div class="entry container">
+                <div class="form-wrapper">
+                    <h2 class="form-wrapper__title" id="registrations">Онлайн-запись</h2>
+                    <form class="form-fild">
+                        <div class="group">
+                            <div class="form-group">
+                                <input class="form-group__input input form-group__name" placeholder=" " type="text" name="user-name" id="name" />
+                                <label class="form-group__label" for="name" >Имя*</label>
+                            </div>
+
+                            <div class="form-group">
+                                <input class="form-group__input input form-group__tel" placeholder=" " type="tel" name="user-tel" id="tel" />
+                                <label class="form-group__label" for="tel" >Телефон*</label>
+                            </div>
+                        </div>
+                            <div class="form-group">
+                                <input class="form-group__input input form-group__mail" placeholder=" " type="email" name="user-mail" id="email" />
+                                <label class="form-group__label" for="email">Почта*</label>
+                            </div>
+                            <h2 class="select-title">Выберите мастера</h2>
+                            <div class="masters-choice">
+
+                                <div class="form-select">
+                                    <h3 class="form-select__titli">Extreme Barber</h3>
+                                    <select name="extreme-barber" id="">
+                                        <option value="john-smith">John Smith</option>
+                                        <option value="michele-doe">Michele Doe</option>
+                                        <option value="alan-black">Alan Black</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <ul class="form-radio">
+                                        <h3 class="form-select__titli">Extreme Barber</h3>
+                                        <li class="form-radio__item">
+                                            <input type="radio" name="extreme-barber" value="john-smith" id="john-smith" />
+                                            <label for="john-smith">John Smith</label>
+                                        </li>
+                                        <li class="form-radio__item">
+                                            <input type="radio" name="extreme-barber" value="michele-doe" id="michele-doe" />
+                                            <label for="michele-doe">Michele Doe</label>
+                                        </li>
+                                        <li class="form-radio__item">
+                                            <input type="radio" name="extreme-barber" value="alan-black" id="alan-black" />
+                                            <label for="alan-black">Alan Black</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        
+                        <div class="form-date">
+                            <label for="data">Дата и время</label>
+                            <input type="datetime-local" name="data" id="data">
+                        </div>
+                        <div class="textarea-box">
+                            <label for=""></label>
+                            <textarea class="text-box" placeholder="оставить коментарий"></textarea>
+                        </div>
+
+                        <button class="btn-send" type="submit">отправить</button>
+                    </form>
+                </div>
+                <div class="contacts-wrapper">
+                    <h2 class="contacts-wrapper__title" id="contacts">Контакты</h2>
+                    <address class="address">
+                        <ul class="address__list">
+                            <li class="address__item">
+                                <p class="address__text">ул. Васильковая, 7А Киев, 08132</p>
+                            </li>
+                            <li class="address__item">
+                                <a href="tel:+380441111111" class="address__tel">+38 044 111 11 11</a>
+                            </li>
+                            <li class="address__item">
+                                <a href="mail:barbershop@email.com" class="address__mail">barbershop@email.com</a>
+                            </li>
+                        </ul>
+                    </address>
+                    <div class="work-time">
+                        <h3 class="work-time__title pseudo">время работы</h3>
+                        <p class="work-time__text">Ежедневно с 9:00 до 22:00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- підвал -->
+    <footer class="footer">
+        <div class="footer-box container">
+            <p class="footer-box__text">&copy; Copyright 2022</p>
+            <ul class="footer__list pseudo">
+                <li class="footer__title">
+                    <a class="footer__link" href="">Instagram</a>
+                </li>
+                <li class="footer__title">
+                    <a class="footer__link" href="">Youtube</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
