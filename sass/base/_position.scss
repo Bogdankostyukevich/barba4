@@ -1,0 +1,52 @@
+@keyframes rainbow {
+    0% {
+        background-color: rgba(245, 9, 9, 0.5);
+    }
+
+    20% {
+        background-color: rgba(245, 103, 9, 0.5);
+    }
+
+    40% {
+        background-color: rgba(245, 210, 9, 0.5);
+    }
+
+    60% {
+        background-color: rgba(80, 245, 9, 0.5);
+    }
+
+    80% {
+        background-color: rgba(9, 245, 206, 0.5);
+    }
+
+    100% {
+        background-color: rgba(221, 9, 245, 0.5);
+    }
+}
+
+.sticky {
+    position: sticky;
+    top: 117px;
+    padding: 10px;
+    background-color: var(--sticky-color);
+    border-radius: 25px;
+    animation-name: rainbow;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: var(--timing-function);
+}
+
+.sticky:hover {
+    animation-play-state: paused;
+}
+
+.works .sticky {
+    z-index: 2;
+}
+
+.fixed {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background: linear-gradient(90deg, var(--white-title-color) 155px, var(--black-text-color) 155px);
+}

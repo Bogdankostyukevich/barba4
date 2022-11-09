@@ -1,3 +1,19 @@
-body {
-    background-color: aqua;
-}
+@import "./utils/vars";
+@import "./utils/text";
+@import "./base/common";
+@import "./base/position";
+@import "./base/container";
+@import "./utils/pseudo";
+@import "./components/pretitle";
+@import "./components/social";
+@import "./components/logo";
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/about";
+@import "./layout/price";
+@import "./layout/statistic";
+@import "./layout/masters";
+@import "./layout/works";
+@import "./layout/online-entry";
+@import "./layout/form";
+@import "./layout/footer";

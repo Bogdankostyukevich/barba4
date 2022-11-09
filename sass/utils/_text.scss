@@ -1,0 +1,69 @@
+h1 {
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.18;
+
+    letter-spacing: 0.05em;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+}
+
+.hero-list__link,
+.pretitle,
+.switch__back,
+.switch__front,
+.features__text,
+.footer__link,
+.footer-box__text,
+.work-time__title {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+}
+
+.address__text,
+.address__tel,
+.address__mail {
+    font-style: normal;
+}
+
+.nav-list__item,
+.about-box__reg,
+.contacts__btn,
+.contacts__tel {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+}
+
+h3,
+.statement,
+.about-box__heading,
+.table-wrapper__list,
+.statistic-info__text,
+.address__text,
+.address__tel,
+.address__mail {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.66;
+    letter-spacing: 0.02em;
+}
+
+.about-box__reg,
+.contacts__btn,
+.about-text {
+    text-transform: uppercase;
+}
+
+.hero-list__link,
+.footer-box__text,
+.footer__link {
+    letter-spacing: 0.2em;
+}

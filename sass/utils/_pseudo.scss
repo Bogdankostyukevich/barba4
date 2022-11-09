@@ -1,0 +1,32 @@
+.pseudo {
+    display: flex;
+    align-items: center;
+}
+
+.pseudo::before {
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 1px;
+    border: 1px solid transparent;
+    margin-right: 20px;
+}
+
+.footer .pseudo::before,
+.hero .hero-list__link.pseudo::before {
+    margin-right: 40px;
+}
+
+.hero .pseudo::before,
+.price .pseudo::before,
+.online-entry .pseudo::before {
+    background: var(--grey-color);
+}
+
+.about .pseudo::before,
+.statistic .pseudo::before,
+.masters .pseudo::before,
+.works .pseudo::before,
+footer .pseudo::before {
+    background: var(--black-text-color);
+}

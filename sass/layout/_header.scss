@@ -1,0 +1,116 @@
+.header .container {
+    padding-top: 40px;
+    display: flex;
+    background: linear-gradient(90deg, var(--white-title-color) 155px, var(--black-text-color) 155px);
+}
+
+.nav {
+    margin-left: 195px;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-list__item {
+    position: relative;
+}
+
+.nav-list__link {
+    text-decoration: none;
+    padding: 15px 5px;
+}
+
+.nav-list__link::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    background-color: #FF6C00;
+    border-radius: 25px;
+    transform: scaleX(0);
+    transition: transform 250ms var(--timing-function);
+}
+
+.nav-list__link:hover::after {
+    transform: scaleX(1);
+}
+
+.nav-list {
+    width: 387px;
+    justify-content: space-between;
+}
+
+.nav-list,
+.contacts {
+    display: flex;
+    margin-left: -90px;
+    padding: 0;
+    list-style: none;
+}
+
+.contacts__tel {
+    margin-right: 40px;
+}
+
+.contacts__tel,
+.about-box__reg,
+.contacts__btn {
+    text-decoration: none;
+}
+
+.nav-list__link,
+.contacts__tel,
+.about-box__reg {
+    color: var(--white-title-color);
+}
+
+.contacts__btn {
+    color: var(--white-title-color);
+    align-self: center;
+}
+
+.contacts {
+    margin-left: auto;
+    align-items: center;
+}
+
+.about-box__reg,
+.contacts__btn {
+    display: inline-block;
+    padding: 12px 20px;
+    border: 1px solid var(--hover-color);
+    border-radius: 25px;
+}
+
+.about-box__reg:hover,
+.about-box__reg:focus {
+    background-color: var(--hover-color);
+    color: var(--white-title-color);
+    transition: background-color 250ms var(--timing-function);
+}
+
+.contacts__btn:hover,
+.contacts__btn:focus {
+    background-color: var(--hover-color);
+    transition: background-color 250ms var(--timing-function);
+}
+
+.hero-list__link {
+    text-decoration: none;
+    color: var(--black-text-color);
+}
+
+.nav-list__link:hover,
+.nav-list__link:focus,
+.hero-list__link:hover,
+.hero-list__link:focus,
+.footer__link:hover,
+.footer__link:focus {
+    color: var(--hover-color);
+    transition: color 250ms var(--timing-function);
+}
