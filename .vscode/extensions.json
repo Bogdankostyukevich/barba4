@@ -1,3 +1,6 @@
 {
-  "recommendations": ["dzhavat.bracket-pair-toggler"]
+  "recommendations": [
+    "dzhavat.bracket-pair-toggler",
+    "ritwickdey.LiveServer"
+  ]
 }

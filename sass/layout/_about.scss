@@ -1,10 +1,10 @@
-.about .container {
-    padding-top: 139px;
-    padding-bottom: 121px;
-}
+.about {
+    padding-top: 140px;
+    padding-bottom: 120px;
 
-.about-content {
-    display: flex;
+    & .about-content {
+        display: flex;
+    }
 }
 
 .about-list {
@@ -12,27 +12,59 @@
     margin: 0;
     padding: 0;
     list-style: none;
-}
 
-.about-list__img {
-    margin-right: 30px;
-    transform: scale(1);
-    transition: transform 250ms var(--timing-function);
-}
-
-.about-list__img:hover {
-    transform: scale(1.1);
-    box-shadow: 12px 12px 2px 1px rgba(48, 48, 48, 1);
+    & .about-list__img {
+            margin-right: 30px;
+            transform: scale(1);
+            transition: transform 250ms $timingfunction;
+        }
+    
+    & .about-list__img:hover {
+        transform: scale(1.1);
+        box-shadow: 12px 12px 2px 1px rgba(48, 48, 48, 1);
+    }
 }
 
 .about-box {
     margin-left: 64px;
-}
 
-.about-box__title {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: var(--black-text-color);
+    & .about-box__reg {
+        display: inline-block;
+        padding: 12px 20px;
+        border: 1px solid $hovercolor;
+        border-radius: 25px;
+        text-decoration: none;
+        color: $blackcolor;
+    }
+
+    & .about-box__reg:hover,
+    & .about-box__reg:focus {
+        background-color: $hovercolor;
+        color: $whitecolor;
+        transition: background-color 250ms $timingfunction;
+    }
+
+    & .about-box__reg:hover,
+    & .about-box__reg:focus {
+        background-color: $hovercolor;
+        color: $whitecolor;
+        transition: background-color 250ms $timingfunction;
+    }
+
+    & .about-box__title {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: $blackcolor;
+    }
+
+    & .about-us {
+        margin-bottom: 38px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 26px;
+        letter-spacing: 0.02em;
+        color: $description-color;
+    }
 }
 
 .about-box__title,
@@ -45,15 +77,3 @@
     margin-bottom: 21px;
 }
 
-.about-us {
-    margin-bottom: 38px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 26px;
-    letter-spacing: 0.02em;
-    color: var(--description-color);
-}
-
-.about .about-box__reg {
-    color: var(--black-text-color)
-}

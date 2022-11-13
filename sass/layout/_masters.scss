@@ -10,14 +10,10 @@
 }
 
 .masters-list__item {
+    margin: 0;
     text-align: center;
     perspective: (400px);
     color: var(--black-text-color);
-}
-
-.master-text,
-.masters-list__item {
-    margin: 0;
 }
 
 .masters__title {
@@ -27,7 +23,6 @@
 
 .masters-list,
 .social-list {
-    margin: 0;
     padding: 0;
     list-style: none;
 }
@@ -35,17 +30,17 @@
 .masters-list {
     display: flex;
     justify-content: space-between;
-}
 
-.masters-list__img {
-    width: 100%;
-    height: auto;
-    transition: transform 250ms var(--timing-function),
+    & .masters-list__img {
+        width: 100%;
+        height: auto;
+        transition: transform 250ms var(--timing-function),
         box-shadow 250ms var(--timing-function);
-}
+    }
 
-.masters-list__img:hover {
-    transform: rotate(-5deg);
+    & .masters-list__img:hover {
+        transform: rotate(-5deg);
+    }
 }
 
 .masters-list__name,

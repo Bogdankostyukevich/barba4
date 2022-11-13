@@ -34,11 +34,12 @@
     animation-duration: 3000ms;
     animation-iteration-count: infinite;
     animation-timing-function: var(--timing-function);
-}
 
-.sticky:hover {
-    animation-play-state: paused;
+    &:hover {
+        animation-play-state: paused;
+        }
 }
+    
 
 .works .sticky {
     z-index: 2;
