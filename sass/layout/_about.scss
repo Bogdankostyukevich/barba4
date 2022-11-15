@@ -9,9 +9,7 @@
 
 .about-list {
     display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    
 
     & .about-list__img {
             margin-right: 30px;
@@ -63,7 +61,7 @@
         font-size: 14px;
         line-height: 26px;
         letter-spacing: 0.02em;
-        color: $description-color;
+        color: $descriptioncolor;
     }
 }
 

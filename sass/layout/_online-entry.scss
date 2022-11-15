@@ -1,11 +1,7 @@
-.online-entry .container {
-    background-image: url("../images/background/background5.jpg");
-    background-color: var(--Online-registration);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: contain;
-    background-blend-mode: color-burn;
-    padding: 0 55px;
+.online-entry {
+    margin: 0;
+    padding: 0;
+    color: $whitecolor;
 }
 
 .entry {
@@ -15,7 +11,17 @@
     align-items: baseline;
     padding-top: 20px;
     padding-bottom: 130px;
+
+    &.container {
+            background-image: url("../images/background/background5.jpg");
+            background-color: $onlineregistration;
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: contain;
+            background-blend-mode: color-burn;
+    }
 }
+
 
 .form-wrapper,
 .contacts-wrapper {
@@ -24,21 +30,13 @@
 
 .contacts-wrapper {
     padding-left: 150px;
-}
 
-.online-entry {
-    margin: 0;
-    padding: 0;
-}
-
-.online-entry,
-.contacts-wrapper__title {
-    color: var(--white-title-color);
-}
-
-input,
-textarea {
-    padding: 0;
+    & .contacts-wrapper__title {
+        color: $whitecolor;
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
 }
 
 .btn-send {
@@ -47,85 +45,72 @@ textarea {
     width: 160px;
     height: 40px;
     background-color: transparent;
-    color: var(--white-title-color);
-    border: 1px solid var(--hover-color);
+    color: $whitecolor;
+    border: 1px solid $hovercolor;
     border-radius: 25px;
     cursor: pointer;
+
+    &:hover,
+    &:focus {
+        background-color: $hovercolor;
+        transition: background-color 250ms $timingfunction;
+    }
 }
 
-.btn-send:hover,
-.btn-send:focus {
-    background-color: var(--hover-color);
-    transition: background-color 250ms var(--timing-function);
-}
-
-.contacts-wrapper__title {
-    margin-top: 0;
-    margin-bottom: 30px;
-    padding: 0;
-}
-
-.address__list,
-.footer__list {
+.address__list {
     margin: 0;
     padding: 0;
     list-style: none;
-}
 
-.address__text,
-.address__tel,
-.address__mail,
-.footer-box__text {
-    color: var(--text-color);
-}
+    & .address__text,
+    & .address__tel,
+    & .address__mail {
+        color: $textcolor;
+    }
 
-.address__list p,
-a {
-    display: flex;
-    align-items: center;
-}
+    & p,
+    & a {
+        display: flex;
+        align-items: center;
+    }
 
-.address__list p::before,
-.address__list a::before {
-    display: inline-block;
-    content: "";
-    width: 24px;
-    height: 24px;
-    margin-right: 16px;
-}
+    & p::before,
+    & a::before {
+        display: inline-block;
+        content: "";
+        width: 24px;
+        height: 24px;
+        margin-right: 16px;
+    }
 
-.address__list p::before {
-    background-image: url("../images/icons/map-pin.svg");
-    align-items: center;
-}
+    & p::before {
+        background-image: url("../images/icons/map-pin.svg");
+        align-items: center;
+    }
 
-.address__list .address__tel::before {
-    background-image: url("../images/icons/phone.svg");
-}
+    & .address__tel::before {
+        background-image: url("../images/icons/phone.svg");
+    }
 
-.address__list .address__mail::before {
-    background-image: url("../images/icons/mail.svg");
-}
+    & .address__mail::before {
+        background-image: url("../images/icons/mail.svg");
+    }
 
-.address__text {
-    align-items: center;
-}
+    & .address__text {
+        align-items: center;
+        padding: 0;
+    }
 
-.address__text,
-.work-time__title {
-    margin: 0;
-    padding: 0;
-}
-
-.address__tel {
-    display: inline-block;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-decoration: none;
+    & .address__tel {
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-decoration: none;
+    }
 }
 
 .work-time__title {
     margin-top: 70px;
     margin-bottom: 20px;
-    color: var(--white-title-color);
+    color: $whitecolor;
 }

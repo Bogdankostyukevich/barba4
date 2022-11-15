@@ -20,7 +20,7 @@
 .hero .pseudo::before,
 .price .pseudo::before,
 .online-entry .pseudo::before {
-    background: var(--grey-color);
+    background: $greycolor;
 }
 
 .about .pseudo::before,
@@ -28,5 +28,5 @@
 .masters .pseudo::before,
 .works .pseudo::before,
 footer .pseudo::before {
-    background: var(--black-text-color);
+    background: $blackcolor;
 }

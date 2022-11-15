@@ -1,13 +1,10 @@
 .pretitle {
     text-transform: uppercase;
     margin: 0;
-}
-
-.pretitle {
-    margin-bottom: 20px;
-    color: var(--black-text-color);
+    margin-bottom: 44px;
+    color: $blackcolor;
 }
 
 .pretitle__gray {
-    color: var(--text-color);
+    color: $textcolor;
 }

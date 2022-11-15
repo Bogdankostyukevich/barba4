@@ -1,7 +1,7 @@
 .masters {
     padding-top: 120px;
     padding-bottom: 120px;
-    background-color: var(--background-color);
+    background-color: $backgroundcolor;
 }
 
 .masters-box {
@@ -9,12 +9,7 @@
     padding-bottom: 120px;
 }
 
-.masters-list__item {
-    margin: 0;
-    text-align: center;
-    perspective: (400px);
-    color: var(--black-text-color);
-}
+
 
 .masters__title {
     margin-top: 18px;
@@ -31,11 +26,18 @@
     display: flex;
     justify-content: space-between;
 
+    & .masters-list__item {
+            margin: 0;
+            text-align: center;
+            perspective: (400px);
+            color: $blackcolor;
+        }
+
     & .masters-list__img {
         width: 100%;
         height: auto;
-        transition: transform 250ms var(--timing-function),
-        box-shadow 250ms var(--timing-function);
+        transition: transform 250ms $timingfunction,
+        box-shadow 250ms $timingfunction;
     }
 
     & .masters-list__img:hover {
@@ -52,10 +54,10 @@
 .masters-list__name {
     margin-top: 28px;
     margin-bottom: 7px;
-    color: var(--black-text-color);
+    color: $blackcolor;
 }
 
 .masters-list__skill {
     margin-bottom: 27px;
-    color: var(--hover-color);
+    color: $hovercolor;
 }

@@ -1,23 +1,27 @@
-:root {
-    --white-title-color: #ffffff;
-    --text-color: #9da4bd;
-    --grey-color: rgba(157, 164, 189, 0.6);
-    --sticky-color: rgb(255, 106, 0);
-    --sticky-rgba: rgb(255, 106, 0, 0.5);
-    --hover-color: #FF6C00;
-    --black-text-color: #303030;
-    --description-color: #555555;
-    --background-color: #F7F7F7;
-    --Online-registration: #191C26;
-    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    --color-text-form: rgba(157, 164, 189, 0.4);
-}
+// :root {
+//     --white-title-color: #ffffff;
+//     --text-color: #9da4bd;
+//     --grey-color: rgba(157, 164, 189, 0.6);
+//     --sticky-color: rgb(255, 106, 0);
+//     --sticky-rgba: rgb(255, 106, 0, 0.5);
+//     --hover-color: #FF6C00;
+//     --black-text-color: #303030;
+//     --description-color: #555555;
+//     --background-color: #F7F7F7;
+//     --Online-registration: #191C26;
+//     --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//     --color-text-form: rgba(157, 164, 189, 0.4);
+// }
 
 $hovercolor: #FF6C00;
 $whitecolor: #ffffff;
 $backgroundcolor: #F7F7F7;
 $textcolor: #9da4bd;
 $blackcolor: #303030;
-$textcolor: #9da4bd;
 $descriptioncolor: #555555;
 $timingfunction: cubic-bezier(0.4, 0, 0.2, 1);
+$stickyrgba: rgb(255, 106, 0, 0.5);
+$onlineregistration: #191C26;
+$greycolor: rgba(157, 164, 189, 0.6);
+$stickycolor: rgb(255, 106, 0);
+$colortextform: rgba(157, 164, 189, 0.4);
